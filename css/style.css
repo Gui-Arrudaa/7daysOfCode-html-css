@@ -1,7 +1,29 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  gap: 2rem;
+}
+
+.buttons button {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.625rem 1.125rem;
+  cursor: pointer;
+}
+
+.buttons .cadastro-btn {
+  background-color: var(--btn-color);
+  color: var(--white-color);
+}
