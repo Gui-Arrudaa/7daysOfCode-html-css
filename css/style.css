@@ -28,6 +28,8 @@ nav {
   color: var(--white-color);
 }
 
+/* Day 2 */
+
 .about-us {
   display: flex;
   flex-direction: column;
@@ -52,4 +54,39 @@ nav {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
+}
+
+/* Day 3  */
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  padding: 0 7rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric .title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.metric .subtitle {
+  font: 1.125rem;
+  font-weight: 500;
+  color: var(--text-color-2);
+}
+
+.metric p {
+  color: var(--text-color);
+  font-size: 90%;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
