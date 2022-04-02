@@ -90,3 +90,35 @@ nav {
   font-weight: 400;
   line-height: 1.25rem;
 }
+
+/* Day 4 */
+
+.talents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 7rem;
+  gap: 1rem;
+}
+
+.talents span {
+  color: var(--main-color);
+  background: rgba(142, 36, 36, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.talents h2 {
+  font-size: 2rem;
+}
+
+.talents p {
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.talents img {
+  width: 90%;
+}
