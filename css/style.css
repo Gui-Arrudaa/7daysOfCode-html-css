@@ -189,3 +189,53 @@ nav {
 .depoimentos span.img-subtitle {
   color: var(--text-color);
 }
+
+/* Day 7  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 1.5rem;
+  background-color: #F9FAFB;
+} 
+
+.footer h2 {
+  color: var(--text-color-2);
+}
+
+.footer p {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.footer .form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .form input {
+  border: 1px solid #D0D5DD;
+  color: var(--text-color);
+  width: 280px;
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.footer .form button {
+  color: white;
+  background-color: var(--main-color);
+  padding: 0.625rem 1.125rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.footer span {
+  font-size: 90%;
+  color: var(--text-color);
+  font-weight: 400;
+}
