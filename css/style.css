@@ -1,8 +1,31 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 1rem 0;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.menu-icon {
+  display: none;
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu.active {
+  right: 0;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s;
 }
 
 .links {
@@ -27,6 +50,7 @@ nav {
   background-color: var(--main-color);
   color: var(--white-color);
 }
+
 
 /* Day 2 */
 
@@ -238,4 +262,109 @@ nav {
   font-size: 90%;
   color: var(--text-color);
   font-weight: 400;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 950px) {
+  .metrics {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    height: 100vh;
+    background: #F9FAFB;
+    width: 15rem;
+    padding: 2rem;
+    transition: all 2s;
+  }
+
+  .menu .links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: initial;
+    visibility: visible;
+  }
+
+  .metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metric {
+    align-items: center;
+  }
+
+  .metric p {
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .about-us p {
+    max-width: 70%;
+  }
+
+  .talents {
+    padding: 4rem;
+  }
+
+  .vagas {
+    max-width: 80%;
+  }
+
+  .depoimentos {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .about-us {
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .about-us h1 {
+    font-size: 1.5rem;
+  }
+
+  .talents {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .talents h2 {
+    font-size: 1.5rem;
+  }
+
+  .depoimentos {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+
+  .footer .form input {
+    width: 200px;
+  }
 }
